@@ -1,0 +1,13 @@
+.mask-input {
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    padding: 7px 11px;
+    width: 100%;
+    font-family: 'Montserrat';
+    outline: none;
+}
+
+.mask-input:hover {
+    border: 1px solid #adb8ff;
+    box-shadow: 0 0 0 2px rgba(5, 72, 255, 0.06);
+}
