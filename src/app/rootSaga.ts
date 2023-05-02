@@ -1,9 +1,5 @@
 import authSaga  from '../features/auth/authSaga';
 import goodsSaga  from '../features/journal/goodsSaga';
-// import blogSaga from 'features/blog/blogSaga';
-// import citySaga from 'features/city/citySaga';
-// import dashboardSaga from 'features/dashboard/dashboardSaga';
-// import studentSaga from 'features/student/studentSaga';
 import { all } from 'redux-saga/effects';
 
 export default function* rootSaga() {
