@@ -37,7 +37,7 @@ const JournalFilter = ({onSearchChange, onStatusChange}: JournaFilter) => {
                     onChange={(value) => handleChange(value, 'sort')}
                     options={[
                         { value: 'date_of_receipt', label: 'Дата приёма' },
-                        { value: 'reciver', label: 'Получатель' }
+                        { value: 'price', label: 'Получатель' }
                     ]}
                 />
             </div>
@@ -56,7 +56,7 @@ const JournalFilter = ({onSearchChange, onStatusChange}: JournaFilter) => {
                 />
             </div>
             <div style={style}>
-                <Input prefix={<SearchOutlined />} onChange={onSearchChange} style={{width: 200}} name={'number_td_mdp'} placeholder="Номер ДТ"/>
+                <Input prefix={<SearchOutlined />} onChange={onSearchChange} style={{width: 200}} name={'number_td_mdp'} placeholder="Номер ТД"/>
             </div>
         </div>
     )

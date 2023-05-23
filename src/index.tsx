@@ -10,15 +10,13 @@ import { BrowserRouter } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
 import locale from 'antd/locale/ru_RU';
 
-
-
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      {/* <ConnectedRouter history={history}> */}
         <BrowserRouter>
         <ConfigProvider
           locale={locale}
@@ -30,7 +28,6 @@ root.render(
               colorTextBase: '#000',
               colorTextSecondary: '#707070',
               colorSuccessBg: '#2DF229',
-
             },
           }}
         >
@@ -38,7 +35,6 @@ root.render(
         </ConfigProvider>
    
         </BrowserRouter>
-      {/* </ConnectedRouter> */}
     </Provider>
   
   </React.StrictMode>

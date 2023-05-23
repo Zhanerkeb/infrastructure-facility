@@ -30,7 +30,7 @@ const Scheme = () => {
                         <div style={{display: 'flex', alignItems: 'center', width: '100%'}}>
                             <div style={{width: 30, lineHeight: '20px'}}> {value}</div>   
                                 {map[key][value].map((item: Goods) =>
-                                item.status ? <NavLink to={`/dashboard/new-journal/${item.id}`} style={{display: 'flex', alignItems: 'center', justifyContent: 'center',height: '20px', width: '3%', margin: 3,  backgroundColor: !item.status  ? '#D9D9D9' : item.status.toLowerCase() == 'на складе' ? '#7F8BF6' : '#F84848' }}>
+                                item.status ? <NavLink to={`/dashboard/new-journal/${item.id}`} style={{display: 'flex', alignItems: 'center', justifyContent: 'center',height: '20px', width: '3%', margin: 3,  backgroundColor: (!item.status || item.status.toLowerCase() === "отгружен" ) ? '#D9D9D9' : item.status.toLowerCase() == 'на складе' ? '#7F8BF6' : '#F84848' }}>
                                     {item.status && 
                                         <Popover
                                             trigger={'hover'}

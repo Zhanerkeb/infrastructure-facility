@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
-export const baseUrl = 'http://192.168.0.107:4000/'
+export const baseUrl = 'http://192.168.0.104:4000/'
 
 const axiosClient =  axios.create({
   baseURL: baseUrl,
@@ -7,9 +7,7 @@ const axiosClient =  axios.create({
     'Content-Type': 'application/json',
     "Authorization" : `${localStorage.getItem('token')}`
   }
-
 });
-
 
 axiosClient.interceptors.request.use(function (config: AxiosRequestConfig) {
   return config;
